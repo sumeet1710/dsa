@@ -2,7 +2,7 @@ import java.util.Arrays;
 public class BinarySearch {
     public static void main(String[] args) {
         int [] arr={11,22,33,44,55,66,77,88,99};
-        int target=82;
+        int target=12;
         int ans=search( arr,target);
         System.out.println(ans);
     }
@@ -10,7 +10,7 @@ public class BinarySearch {
         int s=0;int e= arr.length-1;
 
         while(s<=e){
-            int mid=s+(e-s)/2;
+            int mid=(s+e)/2;
             if(arr[mid]>target){
                 e=mid-1;
             }else if(arr[mid]<target){
@@ -20,7 +20,7 @@ public class BinarySearch {
                 return mid;
         }
     }
-        return -1;
+        return s;
 }
 
 }

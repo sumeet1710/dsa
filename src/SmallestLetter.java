@@ -19,7 +19,7 @@ public class SmallestLetter {
         }
             return arr[s % arr.length];
 
-        }
+         }
 
 
     }
